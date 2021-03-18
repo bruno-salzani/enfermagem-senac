@@ -1,198 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>S.G.A</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-pink.min.css" />     
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap">  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="src/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="src/css/fontawesome/all.css">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-    <!-- JS -->
-    <script src="src/js/jquery-3.4.1.min.js"></script>
-    <script src="src/js/bootstrap/bootstrap.min.js"></script>
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="src/css/style.css">
+	<link rel="stylesheet" href="src/css/timeline.css">
+	<link rel="stylesheet" href="src/assets/css/bootstrap/bootstrap.css">
+
+	<script src="src/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="src/assets/js/bootstrap/bootstrap.js"></script>
 </head>
 <body>
-    <div class=" mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-        <header class="mdl-layout__header">
-            <div class="mdl-layout__header-row">
-                <!-- Navbar Title -->
-                <span class="mdl-layout-title"></span>
-                <div class="mdl-layout-spacer"></div>
-                <!-- Navbar Menu -->
-                <div class="navbar__menu justify-content-md-end">
-                    <div id="navbar-alert" class="navbar__menu--item mdl-badge mdl-badge--overlap" data-badge="2">
-                        <i class="navbar__icon fas fa-exclamation-circle"></i>
-                    </div>
-                    <div id="navbar-notification" class="navbar__menu--item mdl-badge mdl-badge--overlap" data-badge="12">
-                        <i class="navbar__icon fas fa-bell"></i>
-                    </div>
-                    <!-- Menu Tooltip -->
-                    <div class="mdl-tooltip" data-mdl-for="navbar-notification">
-                        Notificações
-                    </div>
-                    <div class="mdl-tooltip" data-mdl-for="navbar-alert">
-                        Alertas
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="sidebar__primary mdl-layout__drawer">
-            <!-- Sidebar Header -->
-            <div class="sidebar__header">
-                <!-- Sidebar Info -->
-                <i class="sidebar__header--icon fas fa-user-circle"></i>
-                <div class="sidebar__header--info">
-                    <span class="sidebar__header--text">Bruno Borges Salzani</span>
-                    <!-- Sidebar Menu -->
-                    <div class="sidebar__menu">
-                        <button id="sidebar-profile" class="mdl-button mdl-js-button mdl-button--icon">
-                            <i class="sidebar__menu--icon material-icons">person</i>
-                        </button>
-                        <button id="sidebar-history" class="mdl-button mdl-js-button mdl-button--icon">
-                            <i class="sidebar__menu--icon material-icons">history</i>
-                        </button>
-                        <button id="sidebar-logout" class="mdl-button mdl-js-button mdl-button--icon">
-                            <i class="sidebar__menu--icon material-icons">exit_to_app</i>
-                        </button>
-                        <!-- Menu Tooltip -->
-                        <div class="mdl-tooltip" data-mdl-for="sidebar-profile">Perfil</div>
-                        <div class="mdl-tooltip" data-mdl-for="sidebar-history">Historico</div>
-                        <div class="mdl-tooltip" data-mdl-for="sidebar-logout">Sair</div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sidebar Pages -->
-            <nav class="sidebar__navigation mdl-navigation">
-                <!-- Link -->
-                <a class="sidebar__link mdl-navigation__link sidebar__link-active" href="../../../index.html">
-                    <i class="sidebar__icon--secondary fas fa-home"></i>Inicio
-                </a>
-            </nav>
-        </div>
-        <!-- Main Content -->
-        <main class="mdl-layout__content">
-            <div class="page__content page-content">
-                <!-- Page Info -->
-                <div class="page__info">
-                    <div class="row">
-                        <!-- Title -->
-                        <div class="page__title col-lg-3 col-md-4 col-xs-12">
-                            <h5 class="page__title--text">Inicio</h5>
-                        </div>
-                        <!-- Breadcrumb -->
-                        <div class="page__control col-lg-9 col-md-8 col-xs-12 justify-content-md-end">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb mb-0 p-0">
-                                    <li class="breadcrumb-item active" aria-current="page"> Inicio</li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <!-- Page Container -->
-                <div class="page__container container-fluid">
-                    <!-- Section -->
-                    <section class="">
-                        <div class="mdl-grid p-0 mb-3">
-                            <!-- Card -->
-                            <div class="card__primary mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                                <!-- Card Body -->
-                                <div class="card__body--primary">
-                                    <i class="card__icon fas fa-tachometer-alt"></i>
-                                </div>
-                                <div class="card__footer--primary">
-                                    <h4 class="card__title">Visão Geral</h4>
-                                    <div class="mdl-layout-spacer"></div>
-                                </div>
-                            </div>
-                            <!-- Card -->
-                            <div class="card__primary mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                                <!-- Card Body -->
-                                <div class="card__body--primary">
-                                    <i class="card__icon fas fa-bell"></i>
-                                </div>
-                                <div class="card__footer--primary">
-                                    <h4 class="card__title">Notificações</h4>
-                                    <div class="mdl-layout-spacer"></div>
-                                </div>
-                            </div>
-                            <!-- Card -->
-                            <div class="card__primary mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                                <!-- Card Body -->
-                                <div class="card__body--primary">
-                                    <i class="card__icon fas fa-exclamation-triangle"></i>
-                                </div>
-                                <div class="card__footer--primary">
-                                    <h4 class="card__title">Alertas</h4>
-                                    <div class="mdl-layout-spacer"></div>
-                                </div>
-                            </div>
-                            <!-- Card -->
-                            <div class="card__primary mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                                <!-- Card Body -->
-                                <div class="card__body--primary">
-                                    <i class="card__icon fas fa-chart-pie"></i>
-                                </div>
-                                <div class="card__footer--primary">
-                                    <h4 class="card__title">Relatorios</h4>
-                                    <div class="mdl-layout-spacer"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Block-->
-                    <div class="mdl-grid p-0 mt-5">
-                        <!-- Title -->
-                        <div class="mdl-cell mdl-cell--12-col">
-                            <h4 class="section__title">Aeronaves</h4>
-                        </div>
-                        <!-- Card -->
-                        <div style="background: url('./src/assets/img_2.jpg') center / cover;" class="list__item card__primary card__image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                            <div class="mdl-card__title mdl-card--expand"></div>
-                            <div class="mdl-card__actions">
-                                <span class="demo-card-image__filename">AW109SP</span>
-                            </div>
-                        </div>
-                        <!-- Card -->
-                        <div style="background: url('./src/assets/img_1.jpg') center / cover;" class="list__item card__primary card__image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                            <div class="mdl-card__title mdl-card--expand" ></div>
-                            <div class="mdl-card__actions">
-                                <span class="demo-card-image__filename">AW109SP</span>
-                            </div>
-                        </div>
-                        <!-- Card -->
-                        <div style="background: url('./src/assets/image.png') center / cover;" class="list__item card__primary card__image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                            <div class="mdl-card__title mdl-card--expand"></div>
-                            <div class="mdl-card__actions">
-                                <span class="demo-card-image__filename">AW109SP</span>
-                            </div>
-                        </div>
-                        <!-- Card -->
-                        <div style="background: url('./src/assets/image.png') center / cover;" class="list__item card__primary card__image mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone">
-                            <div class="mdl-card__title mdl-card--expand"></div>
-                            <div class="mdl-card__actions">
-                                <span class="demo-card-image__filename">AW109SP</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-    <script>
-        document.querySelectorAll('.list__item').forEach(item => {
-            item.addEventListener('click', event => {
-                location.href = 'view/user/aircraft/myaircraft.html';
-            })
-        });
-    </script>
+	<header class="header--primary">
+		<nav class="header__navbar navbar navbar-expand-lg">
+			<a class="header__title navbar-brand" href="#">Terceira Idade</a>
+
+			<button class="header__menu navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="header__container collapse navbar-collapse" id="navbarNav">
+				<ul class="header__list navbar-nav">
+					<li class="header__item nav-item">
+						<a class="header__link nav-link" href="#home">Inicio</a>
+					</li>
+					<li class="header__item nav-item">
+						<a class="header__link nav-link" href="#about">Sobre</a>
+					</li>
+					<li class="header__item nav-item">
+						<a class="header__link nav-link" href="#violence">Violencia</a>
+					</li>
+					<li class="header__item nav-item">
+						<a class="header__link nav-link" href="#depoimentos">Denuncie</a>
+					</li>
+					<li class="header__item nav-item">
+						<a class="header__link nav-link" href="#contato">Dicas</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<main class="page__layout container-fluid">
+		<div class="page__background--home" id="home"></div>
+
+		<section class="section--about" id="about">
+			<h2 class="section__title">Sobre</h2>
+			
+			<div class="section__container--sized">
+				<p class="paragraph--primary">
+					Entre 2010 e 2050, a expectativa do Instituto Brasileiro de Geografia e Estatística (IBGE) 
+					é de que à população de idosos  vai triplicar no Brasil, o que podemos contribuir 
+					para melhorar a qualidade de vida e sejam assegurados dos seus direitos, 
+					junto o papel da sociedade no respaldo Constitucional e o Estatuto do idoso.
+				</p>
+			</div>
+
+			<div class="section__container--sized">
+				<p class="paragraph--primary">
+					Estamos vivenciando dias cruéis nesse período de Pandemia, completamos um ano de Pandemia 
+					em meio de caos, há exatos um ano atrás o Brasil estava vivendo a triste notícia que o vírus 
+					COVID-19 estava fazendo vítimas, surgiu então fatores que abalou à população em geral 
+					inclusive os idosos. Devastador oque estava acontecendo com o grupo da terceira idade 
+					os mesmos era o grupo de risco, tiveram que adotar medidas de segurança inclusive 
+					o isolamento social, fator contribuinte para os índices de suicídio na terceira crescer, 
+					além do suicídio à depressão e o isolamento, passado um ano, estamos na segunda onda 
+					um verdadeiro colapso em nosso País, a única diferença positiva é que temos um início 
+					de pessoas idosas vacinadas ainda que, muito lento o trâmite de vacinação, porém já 
+					com grande resultado, dados apontam que houve queda nos números de mortos na terceira idade. 
+					Como podemos ajudar a terceira idade de hoje e os “novos velhos” de amanhã terem dignidade á vida? 
+				</p>
+			</div>
+		</section>
+
+		<section class="section--violence" id="violence">
+			<div class="page__background--violence"></div>
+	
+			<h2 class="section__title">Violência contra o idoso</h2>
+			
+			<div class="section__container--primary">
+				<div class="timeline">
+					<div class="timeline__container left">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Maus-tratos físicos</h2>
+							<p class="timeline__paragraph">esse tipo de violência consiste no uso da força física para compelir os idosos a fazerem o indesejado a sua vontade. O intuito é  provocar-lhes dor, incapacidade, ou, em casos extremos a morte;</p>
+						</div>
+					</div>
+	
+					<div class="timeline__container right">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Maus-tratos psicológicos</h2>
+							<p class="timeline__paragraph">são agressões verbais ou gestuais que têm como objetivo aterrorizar, humilhar, restringir sua liberdade de expressão ou isolar do convívio. Esse tipo de agressão é a mais sofrida pelos idosos, e como há dificuldade na comprovação da violência ela acaba por se perpetuar;</p>
+						</div>
+					</div>
+	
+					<div class="timeline__container left">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Abuso financeiro ou material</h2>
+							<p class="timeline__paragraph">exploração imprópria ou uso não consentido de recursos financeiros patrimoniais. É cometido na sua maioria pelos cuidadores;</p>
+						</div>
+					</div>
+		
+					<div class="timeline__container right">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Abuso sexual</h2>
+							<p class="timeline__paragraph">ato ou jogo sexual de caráter homo ou heterorrelacional visando a excitação, relação sexual ou práticas eróticas por meio de aliciamento, violência física ou ameaças; </p>
+						</div>
+					</div>
+	
+					<div class="timeline__container left">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Negligência</h2>
+							<p class="timeline__paragraph">consiste na recusa ou omissão de cuidados necessários, pelos familiares, cuidadores ou instituições. Geralmente está associada a outros abusos que geram lesões ou traumas físicos, emocionais e sociais, em particular, para aqueles em situação de múltipla dependência ou incapacidade;</p>
+						</div>
+					</div>
+	
+					<div class="timeline__container right">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Abandono</h2>
+							<p class="timeline__paragraph">é ausência ou deserção dos responsáveis governamentais, institucionais ou familiares na prestação de atendimento para a prevenção da violência;</p>
+						</div>
+					</div>
+	
+					<div class="timeline__container left">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Autonegligência</h2>
+							<p class="timeline__paragraph">esse tipo de violência é gerado pelo idoso que ameace a própria saúde ou segurança, pela recusa ou fracasso de prover a si próprio o cuidado adequado. São fatores de risco para a autonegligência morar sozinho, ser do sexo feminino, ser portador de demência ou de distúrbios psiquiátricos, ser alcoólatra, isolar-se socialmente e possuir baixo poder aquisitivo.</p>
+						</div>
+					</div>
+	
+					<div class="timeline__container right">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Violação dos direitos humanos</h2>
+							<p class="timeline__paragraph">privação de qualquer direito inalienável, como a liberdade, direito de fala e privacidade.</p>
+						</div>
+					</div>
+					
+					<div class="timeline__container left">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Abuso médico</h2>
+							<p class="timeline__paragraph">cuidados médicos de forma negligente ou imprópria.</p>
+						</div>
+					</div>
+	
+					<div class="timeline__container right">
+						<div class="timeline__content">
+							<h2 class="timeline__title">Segregação involuntária</h2>
+							<p class="timeline__paragraph">relaciona-se ao espaço das instituições sociais que abrigam o idoso.</p>
+						</div>
+					</div>
+				</div>
+	
+
+			</div>
+		</section>
+
+		<!-- <section class="section--primary">
+			<div class="section__container--sized">
+				<p class="paragraph--secondary">
+					Manifesta-se por qualquer forma de segregação em outro ambiente ou ala de um idoso residente, 
+					sem o consentimento de seu representante legal.
+					Dentre os tipos de violência apresentados, os abusos físicos, psicológicos, sexuais, financeiros 
+					e a negligências, geralmente não chegam aos serviços de saúde, pois permanecem neutralizadas nas 
+					relações familiares, ou ainda dos prestadores de cuidados aos idosos seja pela pessoa física, 
+					como um parente ou contratado diretamente pela família do idoso, seja pelas instituições 
+					prestadoras de serviços, contudo, a detecção de fatores de risco é uma iniciativa para prevenção, 
+					detecção precoce e alicerce de condutas apropriadas ao tratamento para com as pessoas idosas. 
+					Neste ponto é que o Estado deve intervir com políticas públicas que garantam a segurança do idoso. 
+				</p>
+			</div>
+		</section> -->
+	</main>
+
+
 
 </body>
 </html>
