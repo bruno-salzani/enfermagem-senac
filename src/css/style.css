@@ -6,6 +6,7 @@ html,
 body {
 	height: 100%;
 	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	scroll-behavior: smooth;
 }
 
 p {
@@ -24,8 +25,8 @@ p {
 }
 
 .header--primary .header__navbar {
-	background: rgba(0,0,0,0.5);
-	box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+	background: #f1f4f7;
+	box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
 	justify-content: space-between;
 	position: fixed;
 	padding: .5rem 2rem;
@@ -38,20 +39,22 @@ p {
     text-transform: uppercase;
     letter-spacing: .1rem;
     font-weight: 100;
-	color: #fff;
 }
 
 .header--primary .header__container {
 	flex-grow: 0;
 }
 
-.header--primary .header__link {
-	color: #fff;
+.header__item .header__link {
+	color: rgba(0, 0, 0, 0.7) !important;
 	font-family: arial;
     text-transform: uppercase;
 	letter-spacing: .1rem;
 	font-size: 14px;
 	padding-bottom: .5rem;
+}
+
+.header__link:hover {
 }
 
 .header--primary .header__item {
@@ -60,30 +63,12 @@ p {
 	text-decoration: none;
 }
 
-.header--primary .header__item::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	background-color: #000;
-	visibility: hidden;
-	transform: scaleY(0);
-	transition-duration: .5s;
-}
-
-.header--primary .header__item:hover::before {
-	visibility: visible;
-	transform: scaleX(1);
-}
-
 .page__layout {
 	padding: 0 !important;
 }
 
 .section--violence {
-	padding: 3rem 0;
+	padding: 5rem 0;
 	text-align: center;
 	background-image: url(../assets/img/bg_2.jpg);
 	background-attachment: fixed;
@@ -92,11 +77,10 @@ p {
     background-size: cover;
 }
 
-.section--about {
+.section--primary {
 	background: #f1f4f7;
 	box-shadow: inset 0px 3px 10px -2px rgb(0,0,0,0.5);
-	padding-top: 3rem;
-	padding-bottom: 4rem;
+	padding: 5rem 0rem;
 	text-align: center;
 }
 
@@ -110,14 +94,20 @@ p {
 }
 
 .section__container--sized {
-	padding-top: 1.5rem;
+	padding: 1.5rem 0;
 	margin: 0 auto;
-	width: 50%;
+	width: 810px;
 }
 
 .section__container--primary {
 	padding-top: 3rem;
 	margin: 0 auto;
+}
+
+.section__container--justified {
+	padding-top: 3rem;
+	margin: 0 auto;
+	justify-content: space-around;
 }
 
 .section__container--bordered {
@@ -135,6 +125,39 @@ p {
 .paragraph--secondary {
 	color: #fff;
 	text-align: justify;
+}
+
+.paragraph--alternative {
+	width: 80%;
+	margin: 0 auto;
+	font-size: 15px;
+}
+
+.icon__container {
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	width: 130px;
+	height: 130px;
+	border: 1px solid #8e8e8e;
+	border-radius: 50%;
+	transition: 300ms;
+}
+
+.icon__container:hover {
+	transform: scale(0.95);
+	cursor: pointer;
+}
+
+.icon--primary {
+	color: #323232;
+	font-size: 3rem;
+	transform: translate(0,74%);
+}
+
+@media(max-width: 992px) {
+	.section__container--sized {
+		width: 100%;
+	}
 }
 
 @media(max-width: 576px) {

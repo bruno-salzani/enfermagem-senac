@@ -46,14 +46,6 @@
     margin-bottom: .5rem;
 }
 
-.left .timeline__title {
-    text-align: right;
-}
-
-.right .timeline__title {
-    text-align: left;
-}
-
 .timeline__paragraph {
     text-align: justify;
     margin-bottom: 0;
