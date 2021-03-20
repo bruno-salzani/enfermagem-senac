@@ -187,7 +187,7 @@ p {
 		width: 80%;
 	}
 	.page__background--home {
-		background-attachment: scroll;
+		background-size: auto 749px;
 	}
 }
 

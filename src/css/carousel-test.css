@@ -105,7 +105,6 @@
         margin-bottom: 1rem;
     }
 	.carousel--primary {
-		height: 100%;
+		height: 700px;
 	}
 }
-
