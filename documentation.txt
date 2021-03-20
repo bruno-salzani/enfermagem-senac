@@ -105,8 +105,8 @@ valor referência o mesmo será informado através de um médico, para quem não
 aparelho procure o centro de saúde mais próximo. 
 
 
-?.?) Informações nunca é demais
-Qual a importância da vacina da gripe ?
+?.?) Informação nunca é demais
+    Qual a importância da vacina da gripe ?
 Não é preciso ter medo da imunização. As vacinas contra o influenza contêm vírus mortos, 
 ou seja, eles não podem causar a doença. Geralmente são bem toleradas e seguras em idosos. 
 Eventos adversos graves e clinicamente importantes são raros. As reações mais comuns na vacina 

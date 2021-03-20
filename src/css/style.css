@@ -77,6 +77,11 @@ p {
     background-size: cover;
 }
 
+.section--violence .section__title,
+.section--tips .section__title {
+	color: #fff;
+}
+
 .section--primary {
 	background: #f1f4f7;
 	box-shadow: inset 0px 3px 10px -2px rgb(0,0,0,0.5);
@@ -84,9 +89,16 @@ p {
 	text-align: center;
 }
 
-.section--violence .section__title {
-	color: #fff;
+.section--tips {
+	padding: 5rem 0;
+	text-align: center;
+	background-image: url(../assets/img/bg_3.jpg);
+	background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .section__title {
 	text-transform: uppercase;
 	font-family: "Nunito", Arial, Helvetica, sans-serif;
@@ -153,6 +165,8 @@ p {
 	font-size: 3rem;
 	transform: translate(0,74%);
 }
+
+
 
 @media(max-width: 992px) {
 	.section__container--sized {
