@@ -175,13 +175,21 @@ p {
 }
 
 
-
 @media(max-width: 992px) {
 	.section__container--sized {
 		width: 100%;
 	}
 }
 
+/* Tablet */
+@media(max-width: 768px) {
+	.page__background--home {
+		background-attachment: scroll;
+		background-size: auto 1025px;
+	}
+}
+
+/* Cellphone */
 @media(max-width: 576px) {
 	.section__container--sized {
 		width: 80%;
