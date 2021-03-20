@@ -186,6 +186,11 @@ p {
 	.section__container--sized {
 		width: 80%;
 	}
+
+	.section--tips {
+		padding-bottom: 0;
+	}
+
 	.page__background--home {
 		background-attachment: scroll;
 		background-size: auto 936px;

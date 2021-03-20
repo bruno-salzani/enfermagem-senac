@@ -101,7 +101,7 @@
 	}
 }
 
-@media(max-width: 545px) {
+@media(max-width: 576px) {
 	.carousel--primary {
 		height: 560px;
         width: 85%;
