@@ -17,6 +17,10 @@ p {
 	margin-bottom: 1 !important;
 }
 
+li {
+	list-style-type: none;
+}
+
 .page__background--home {
 	background-image: url(../assets/img/bg.jpg);
 	background-attachment: fixed;
@@ -93,7 +97,8 @@ p {
 .section--primary {
 	background: #f1f4f7;
 	box-shadow: inset 0px 3px 10px -2px rgb(0,0,0,0.5);
-	padding: 5rem 0rem;
+	padding-top: 5rem;
+	padding-bottom: 3rem;
 	text-align: center;
 }
 
