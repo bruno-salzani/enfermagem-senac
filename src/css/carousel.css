@@ -2,7 +2,7 @@
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 5px -2px rgb(0,0,0,0.3);
-    height: 410px;
+    height: 100%;
     margin: 0 auto;
     width: 75%;
 }
@@ -84,26 +84,26 @@
 
 @media(max-width: 1200px) {
 	.carousel--primary {
-		height: 450px;
+		/* height: 450px; */
 	}
 }
 
 @media(max-width: 992px) {
 	.carousel--primary {
-		height: 510px;
+		/* height: 510px; */
 	}
 }
 
 @media(max-width: 768px) {
 	.carousel--primary {
-		height: 500px;
+		/* height: 500px; */
         width: 85%;
 	}
 }
 
 @media(max-width: 576px) {
 	.carousel--primary {
-		height: 560px;
+		/* height: 560px; */
         width: 85%;
 	}
 }
@@ -115,6 +115,6 @@
     }
 	.carousel--primary {
         width: 95%;
-		height: 700px;
+		/* height: 700px; */
 	}
 }
