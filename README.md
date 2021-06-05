@@ -13,12 +13,10 @@ Este projeto foi desenvolvido para o projeto integrador do curso técnico de enf
 ### Demonstração
 Para acessar a demonstração do projeto <a href="https://bruno-salzani.github.io/enfermagem-senac/" target="_blank">Clique aqui</a>
 
-![GitHub Logo](/src/assets/img/Thumb/1.jpg)
+![GitHub Logo](/src/assets/img/thumb/thumb_1.jpg)
 
-![GitHub Logo](/src/assets/img/Thumb/2.jpg)
+![GitHub Logo](/src/assets/img/thumb/thumb_2.jpg)
 
-![GitHub Logo](/src/assets/img/Thumb/3.jpg)
+![GitHub Logo](/src/assets/img/thumb/thumb_3.jpg)
 
-![GitHub Logo](/src/assets/img/Thumb/4.jpg)
-
-![GitHub Logo](/src/assets/img/Thumb/5.jpg)
+![GitHub Logo](/src/assets/img/thumb/thumb_4.jpg)
